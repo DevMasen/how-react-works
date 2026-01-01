@@ -21,3 +21,5 @@ root.render(
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
+
+// See all screenshots to deeply understand the React Rendering
