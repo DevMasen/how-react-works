@@ -103,3 +103,10 @@ function DifferentContent() {
 		</div>
 	);
 }
+
+/*
+Important facts:
+SideEffects should not be used in Render Logic
+Render Logic: that sort of codes that runs immediately after components usage.
+SideEffects can be used in Event Handlers or some hooks like useEffect().
+*/
