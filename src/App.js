@@ -41,14 +41,14 @@ function Tabbed({ content }) {
 
 			{/* Diffing 1st rule causes reset the TabContent state when a Different Content is places in The same position */}
 			{activeTab <= 2 ? (
-				<TabContent item={content.at(activeTab)} />
+				// set unic key for component instance to make it different for react and reset on state update
+				<TabContent item={content.at(activeTab)} key={activeTab} />
 			) : (
 				<DifferentContent />
 			)}
 		</div>
 	);
 }
-
 // console.log(<DifferentContent />);
 // console.log(DifferentContent());
 
