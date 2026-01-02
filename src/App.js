@@ -38,6 +38,7 @@ function Tabbed({ content }) {
 				<Tab num={3} activeTab={activeTab} onClick={setActiveTab} />
 			</div>
 
+			{/* Diffing 1st rule causes reset the TabContent state when a Different Content is places in The same position */}
 			{activeTab <= 2 ? (
 				<TabContent item={content.at(activeTab)} />
 			) : (
