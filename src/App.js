@@ -29,6 +29,7 @@ export default function App() {
 function Tabbed({ content }) {
 	const [activeTab, setActiveTab] = useState(0);
 
+	// Using key prop make the instances unic and save their state when component re-rendered and the the place in Virtual DOM changes.
 	return (
 		<div>
 			<div className="tabs">
